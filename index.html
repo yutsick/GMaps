@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Google Maps</title>
+</head>
+
+<body>
+
+  <div class="d-flex">
+    <div class="w-50">
+      <div class="acf-map" data-zoom="16">
+
+        <div class="marker" data-lat="49" data-lng="24"></div>
+        <div id="map"></div>
+      </div>
+    </div>
+    <div class="w-50 buttons">
+      <button class="roadmap">Roadmap</button>
+      <button class="satellite">Satellite</button>
+      <button class="hybrid">Hybrid</button>
+      <button class="terrain">Terrain</button>
+      <br>
+      <input type="number" min="1" max="16" value="8" id="zoom">
+    </div>
+  </div>
+
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="script.js"></script>
+  <script
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCiJatC7yb5TKWSKiPZKLOdLymPRY-gKsA&callback=initMap"></script>
+</body>
+
+</html>
